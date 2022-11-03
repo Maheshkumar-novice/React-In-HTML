@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/Maheshkumar-novice/React-In-HTML#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "terser": "^5.15.1"
-  }
+  },
+  "devDependencies": {}
 }
