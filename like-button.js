@@ -7,20 +7,17 @@ function LikeButton() {
         return 'You liked this!';
     }
 
-    return React.createElement(
-        'button',
-        {
-            onClick: () => setLiked(true),
-        },
-        'Like'
-    );
+    return (
+    <button onClick={() => setLiked(true)}>
+        Like
+    </button>);
 }
 
 const rootNode = document.getElementById('like-button-root');
 const root = ReactDOM.createRoot(rootNode);
-root.render(React.createElement(LikeButton));
+root.render(<LikeButton/>);
 
 
 const secondRootNode = document.getElementById('another-root');
 const secondRoot = ReactDOM.createRoot(secondRootNode);
-secondRoot.render(React.createElement(LikeButton));
+secondRoot.render(<LikeButton/>);
